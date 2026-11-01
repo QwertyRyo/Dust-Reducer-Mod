@@ -60,6 +60,7 @@ namespace DustReducer
             { "LEO1A3A1", ("LEO1A1A1_rig/HULL/TURRET/1A3 mantlet/--Gun Scripts--/105mm Gun L7A3 L52/GameObject", StandardChildren) },
             { "LEO1A3A2", ("LEO1A1A1_rig/HULL/TURRET/1A3 mantlet/--Gun Scripts--/105mm Gun L7A3 L52/GameObject", StandardChildren) },
             { "LEO1A3A3", ("LEO1A1A1_rig/HULL/TURRET/1A3 mantlet/--Gun Scripts--/105mm Gun L7A3 L52/GameObject", StandardChildren) },
+            { "T55A", ("T55A_skeleton/HULL/Turret/GUN/Gun Scripts/100mm Gun D-10T/GameObject", StandardChildren) },
             { "T62", ("---T62_rig---/HULL/TURRET/GUN/---MAIN GUN SCRIPTS---/115mm Gun U-5TS/GameObject", StandardChildren) },
             { "T80B", ("T80B_rig/HULL/TURRET/gun/---MAIN GUN SCRIPTS---/125mm Gun 2A46-2/GameObject", StandardChildren) },
             { "T64R", ("T64R_rig/HULL/TURRET/Main gun/---MAIN GUN SCRIPTS---/115mm Gun D-68/GameObject", StandardChildren) },
