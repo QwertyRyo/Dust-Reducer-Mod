@@ -20,6 +20,7 @@ namespace DustReducer {
       "HEAT Dirt Impact Medium(Clone)",
       "HEAT Dirt Impact Large(Clone)",
       "HEAT Rocket Dirt Small(Clone)",
+      "HEAT Rocket Dirt Medium(Clone)",
       "Cannon Kinetic Dirt Small(Clone)",
       "Bullet Dirt Large(Clone)"
     };
@@ -49,9 +50,11 @@ namespace DustReducer {
   [HarmonyPatch(typeof(ParticleEffectsManager), "CreateImpactEffectOfType")]
   public class CreateImpactEffectPatch {
     public static void Postfix(GameObject __result) {
-      if (!DustReducerMod.DisableImpactSmoke.Value) { return; }
-
+      if (!DustReducerMod.DisableImpactSmoke.Value) { 
+        return; 
+      }
       if (__result != null && DustReducerMod.CancelledEffects.Contains(__result.name)) {
+        
         __result.SetActive(false);
         ParticleEffectTags tags = __result.GetComponent<ParticleEffectTags>();
         if (tags != null) {
