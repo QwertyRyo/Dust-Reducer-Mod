@@ -14,6 +14,7 @@ namespace DustReducer {
       "Artillery 155mm Terrain(Clone)",
       "250kg Bomb Dirt(Clone)",
       "Autocannon HE Dirt Small(Clone)",
+      "Autocannon HE Dirt Large(Clone)",
       "Autocannon Dirt Medium(Clone)",
       "Autocannon Dirt Small(Clone)",
       "APFSDS Dirt Large(Clone)",
@@ -53,6 +54,7 @@ namespace DustReducer {
       if (!DustReducerMod.DisableImpactSmoke.Value) { 
         return; 
       }
+      MelonLogger.Msg($"DustReducer: Disabling impact effect {__result.name}");
       if (__result != null && DustReducerMod.CancelledEffects.Contains(__result.name)) {
         
         __result.SetActive(false);
