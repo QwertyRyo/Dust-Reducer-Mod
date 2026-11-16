@@ -54,7 +54,6 @@ namespace DustReducer {
       if (!DustReducerMod.DisableImpactSmoke.Value) { 
         return; 
       }
-      MelonLogger.Msg($"DustReducer: Disabling impact effect {__result.name}");
       if (__result != null && DustReducerMod.CancelledEffects.Contains(__result.name)) {
         
         __result.SetActive(false);
